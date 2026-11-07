@@ -1,0 +1,42 @@
+name: Сообщить об ошибке
+description: Проблема в просмотрщике IFC или плагине Revit
+title: "[Ошибка] "
+body:
+  - type: markdown
+    attributes:
+      value: "Обращение и вложения будут публичными. Для примера используйте учебную модель или разрешённый к публикации фрагмент."
+  - type: dropdown
+    id: product
+    attributes:
+      label: Где возникла ошибка
+      options:
+        - Просмотрщик IFC в браузере
+        - Плагин Revit
+        - Сайт
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Версия и окружение
+      description: Версия IDS Core, Revit или браузера и операционной системы
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      description: Опишите последовательность действий и что произошло
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Пример и изображение
+      description: Можно приложить снимок экрана или разрешённый к публикации пример IFC

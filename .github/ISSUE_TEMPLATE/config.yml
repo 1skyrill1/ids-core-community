@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Вопрос по проекту
+    url: https://t.me/ifc_expert
+    about: Обсудить конкретную модель и услуги с командой
+  - name: Инструкции IDS Core
+    url: https://idscore.online/docs/
+    about: Установка и работа с плагином
